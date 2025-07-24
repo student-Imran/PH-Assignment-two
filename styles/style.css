@@ -1,0 +1,298 @@
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+ 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.hide{
+    display: none;
+}
+
+/* Shared item */
+.bold{
+    font-weight: 700;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+figure img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.span-style{
+   color: rgb(233, 90, 8);
+}
+.p-text-style{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+}
+.heading-style{
+  font-size: 3rem;
+  line-height: 68px;
+  text-align: center;
+}
+.btn-primary{
+    width: 100%;
+    max-width: 270px;
+    height: 50px;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgb(233, 90, 8);
+    border: none;
+    color: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.w-full{
+    width: 100%;
+}
+
+/* Nav var */
+
+header nav{
+   margin-top: 30px;
+   height: 71px;
+   align-items: center;
+}
+nav div ul{
+    display: flex;
+    gap: 48px;
+    
+   
+}
+nav div ul li{
+    list-style: none;
+}
+nav div ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav div ul li a.active{
+    font-weight: 700;
+    color: rgb(37, 36, 50);
+}
+nav div ul li a.dactive{
+    color: rgb(137, 135, 161);
+}
+nav div ul li .no{
+    color: rgb(0,0,0);
+}
+
+/* Nav var end */
+
+
+/* Banner start */
+
+.banner{
+    width: 100%;
+    height: 355px;
+    margin-top: 120px;
+    align-items: flex-end;
+   
+}
+
+.banner .banner-dscp{
+    width: 100%;
+    max-width: 570px;
+}
+.banner .banner-dscp h1{
+    font-size: 4rem;
+    line-height: 89px;
+}
+
+
+/* Banner end */
+
+
+/* Main part start */
+
+/* Our plants start  */
+
+.our-plants{
+    width: 100%;
+    max-width: 888px;
+    margin: 120px auto 0px;
+    text-align: center;
+}
+
+/* Our plants end */
+
+/* Grid Item start */
+.grid-item-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 49px;
+    row-gap: 35px;
+}
+
+.grid-item-container .card{
+    text-align: center;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+
+}
+.grid-item-container .card h5,
+.grid-item-container .card h6{
+    color: rgb(17, 17, 17);
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+.grid-item-container .card h6{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+/* Grid Item end */
+
+/* Challenge part-1 Start */
+
+.ch-1{
+    gap: 50px;
+    margin-top: 200px;
+
+}
+.ch-1 .photo{
+    position: relative;
+}
+.ch-1 .photo .fig-2-div{
+    position: absolute;
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    top: -130px;
+    right: -120px;
+    display: inline-block;
+    overflow: visible;
+}
+.ch-1 .photo .fig-2-div figure .fig-2{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(-4px 10px 2px rgba(0, 0, 0, 0.25));
+
+}
+
+.ch-1-dscp-container{
+    width: 100%;
+    text-align: left;
+    flex: 1;
+   
+}
+.ch-1-dscp-container h1{
+    text-align: left;
+    font-weight: bold;
+    padding-top: 70px;
+}
+.ch-1-dscp-container p{
+    padding-top: 35px;
+}
+
+@media screen and (max-width:394px) {
+    nav
+    {
+      width: 100%;
+      height: auto;
+      padding: 0 6px;
+    }
+    nav div ul li a.active,
+    nav div ul li a.dactive
+    {
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 0 6px;
+    }
+    .banner .banner-dscp{
+        padding: 33px 0 0 0;
+    }
+    .banner .banner-dscp p{
+        padding: 20px 0 0 0;
+    }
+    .banner .banner-dscp h1
+    {
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
+    .banner .banner-dscp p,
+    .our-plants p
+    {
+        font-size: 0.88rem;
+    }
+    .our-plants h1{
+        font-size: 1.5rem;
+    }
+    .our-plants{
+        width: 80%;
+        height: auto;
+    }
+    .grid-item-container{
+         padding: 0 6px;
+         width: 100%;
+         height: auto;
+         grid-template-columns: repeat(2,1fr);
+         column-gap: 20px;
+    }
+    .ch-1 .photo{
+        width: 100%;
+        height: auto;
+    }
+    .ch-1{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 0 6px;
+        margin-top: 40px;
+        gap: 0px;
+    }
+    .ch-1 .photo .fig-2-div{
+        display: none;
+    }
+     .ch-1-dscp-container{
+        width: 100%;
+        height: auto;
+        padding: 0 6px;
+     }
+     .ch-1-dscp-container p{
+        font-size: 0.88rem;
+        padding-top: 10px;
+     }
+    .ch-1-dscp-container h1{
+        padding-top: 0px;
+        font-size: 1.5rem;
+    }
+    .ch-1-dscp-container h1 .break{
+        display: none;
+    }
+    .ch-1-dscp-container ul{
+    padding-left: 1.5rem;   
+    }
+    
+}
+
