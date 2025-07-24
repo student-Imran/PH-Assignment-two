@@ -65,10 +65,13 @@ figure img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .w-full {
   width: 100%;
 }
+
+
 
 /* Nav var */
 
@@ -427,15 +430,24 @@ footer{
 
 
 @media screen and (max-width: 576px) {
+ 
+  /* Navbar start */
+
   nav {
     width: 100%;
     height: auto;
+    
     padding: 0 6px;
   }
   nav div ul li a.active,
   nav div ul li a.dactive {
     display: none;
   }
+
+  /* Navbar End */
+
+  /* Banner Part Start */
+
   .banner {
     width: 100%;
     height: auto;
@@ -443,6 +455,8 @@ footer{
     padding: 0 6px;
   }
   .banner .banner-dscp {
+    width: 95%;
+    margin: 0 auto;
     padding: 33px 0 0 0;
   }
   .banner .banner-dscp p {
@@ -457,6 +471,11 @@ footer{
   .latest-deals p {
     font-size: 0.88rem;
   }
+
+  /* Banner Part End */
+
+  /* Main Part Start */
+
   .our-plants h1,
   .latest-deals h1 {
     font-size: 1.5rem;
@@ -466,29 +485,36 @@ footer{
     height: auto;
   }
   .latest-deals {
-    width: 85%;
+    width: 57%;
     height: auto;
   }
+
+  /* Grid-Container Start */
+
   .grid-item-container {
     padding: 0 6px;
-    width: 100%;
+    width: 95%;
+    margin: 28px auto;
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
   }
 
-  /* Challenge Part -1 */
+  /* Grid-Container End */
+
+
+  /* Challenge Part-1 Start */
 
   .ch-1 .photo {
     width: 100%;
     height: auto;
   }
   .ch-1 {
-    width: 100%;
+    width: 95%;
+    margin: 20px auto;
     height: auto;
     flex-direction: column;
     padding: 0 6px;
-    margin-top: 40px;
     gap: 0px;
   }
   .ch-1 .photo .fig-2-div {
@@ -513,6 +539,8 @@ footer{
   .ch-1-dscp-container ul {
     padding-left: 1.5rem;
   }
+   
+  /* Challenge Part-1 End */
 
   /* Challenge Part-2 */
 
