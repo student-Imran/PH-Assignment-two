@@ -211,6 +211,107 @@ nav div ul li .no{
     padding-top: 35px;
 }
 
+/* Challenge part-2 start */
+
+.latest-deals{
+    width: 100%;
+    max-width: 888px;
+    margin: 120px auto 0px;
+    text-align: center;
+}
+.ch-2 {
+  width: 100%;
+  display: grid;
+  height: 425px;
+  gap: 28px; 
+  grid-template-columns: calc(35% - 14px) calc(65% - 14px); 
+  grid-template-rows: repeat(2,1fr); 
+  margin-top: 120px;
+  overflow: hidden;
+}
+.ch-2 .small-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.4)),url('../assets/deal-ana.png');
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 1;
+   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+}
+.ch-2 .small-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.4)),url('../assets/deal-bloom.png');
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 2;
+   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+}
+.ch-2 .big-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.427),rgba(0, 0, 0, 0.4)),url('../assets/deal-zabo.png');
+  border-radius: 10px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  
+}
+.ch-2 .small-one .flower-dscp
+
+{
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+.ch-2 .small-two .flower-dscp{
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+.ch-2 .big-one .flower-dscp{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+.ch-2 .big-one .flower-dscp div{
+    width: 100%;
+    max-width: 113px;
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 1.5rem;
+}
+.ch-2 .small-one .flower-dscp div,
+.ch-2 .small-two .flower-dscp div
+{
+    width: 100%;
+    max-width: 78px;
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 1rem;
+}
+
+
+
+
+
 @media screen and (max-width:394px) {
     nav
     {
@@ -241,16 +342,25 @@ nav div ul li .no{
       line-height: 30px;
     }
     .banner .banner-dscp p,
-    .our-plants p
+    .our-plants p,
+    .latest-deals p
     {
         font-size: 0.88rem;
     }
-    .our-plants h1{
+    .our-plants h1,
+    .latest-deals h1
+    {
         font-size: 1.5rem;
     }
-    .our-plants{
+    .our-plants
+    {
         width: 80%;
         height: auto;
+    }
+    .latest-deals{
+        width: 85%;
+        height: auto;
+        
     }
     .grid-item-container{
          padding: 0 6px;
