@@ -165,7 +165,11 @@ nav div ul li .no {
   max-width: 270px;
   height: auto;
 }
-.grid-item-container .card h5,
+.grid-item-container .card h5{
+  color: rgb(17, 17, 17);
+  padding-top: 20px;
+  font-size: 1.1rem;
+}
 .grid-item-container .card h6 {
   color: rgb(17, 17, 17);
   padding-top: 20px;
@@ -181,7 +185,7 @@ nav div ul li .no {
 /* Challenge part-1 Start */
 
 .ch-1 {
-  gap: 50px;
+  gap: 60px;
   margin-top: 200px;
 }
 .ch-1 .photo {
@@ -513,7 +517,7 @@ footer{
     height: auto;
   }
   .latest-deals {
-    width: 57%;
+    width: 87%;
     height: auto;
   }
 
@@ -624,10 +628,12 @@ footer{
      margin-bottom: 20px;
   }
   .foot-content{
-    width: 100%;
+    width: 92%;
+    margin: 0 auto;
     height: auto;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px;
   }
   /* Footer Part End */
 
