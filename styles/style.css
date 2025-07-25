@@ -11,7 +11,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,18 +19,23 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
 }
 .hide {
   display: none;
 }
 
 /* Shared item */
-button{
+button {
   transition: all 0.5s ease;
 }
 button:hover {
-  background: linear-gradient(45deg, rgb(233, 90, 8), rgb(255, 136, 0), rgb(255, 191, 0));
+  background: linear-gradient(
+    45deg,
+    rgb(233, 90, 8),
+    rgb(255, 136, 0),
+    rgb(255, 191, 0)
+  );
   color: white;
 }
 
@@ -82,7 +87,7 @@ figure img {
 }
 
 /* only-small */
-.only-small{
+.only-small {
   display: none;
   visibility: hidden;
 }
@@ -165,7 +170,7 @@ nav div ul li .no {
   max-width: 270px;
   height: auto;
 }
-.grid-item-container .card h5{
+.grid-item-container .card h5 {
   color: rgb(17, 17, 17);
   padding-top: 20px;
   font-size: 1.1rem;
@@ -330,29 +335,29 @@ nav div ul li .no {
 
 /* Join Part Start */
 
-.join-part{
+.join-part {
   width: 100%;
   height: 400px;
   margin-top: 120px;
-  background: url('../assets/news-letter-bg.png');
+  background: url("../assets/news-letter-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.join-part .join-dscp{
+.join-part .join-dscp {
   width: 100%;
   max-width: 900px;
   text-align: center;
   height: 140px;
 }
-.join-part .join-dscp h1{
+.join-part .join-dscp h1 {
   color: white;
   font-weight: bold;
   font-size: 3rem;
 }
-.join-part .join-dscp .input-form{
+.join-part .join-dscp .input-form {
   width: 90%;
   height: 50px;
   margin: 0 auto;
@@ -360,14 +365,13 @@ nav div ul li .no {
   text-align: left;
   gap: 0;
   margin-top: 25px;
-
 }
-.join-part .join-dscp .input-form input{
+.join-part .join-dscp .input-form input {
   width: 80%;
   border: none;
   padding-left: 10px;
 }
-.join-part .join-dscp .input-form div button{
+.join-part .join-dscp .input-form div button {
   width: 160px;
   height: 50px;
   border: none;
@@ -376,12 +380,11 @@ nav div ul li .no {
   font-weight: 600;
 }
 
-
 /* Join Part End */
 
 /* Footer Start */
 
-footer{
+footer {
   width: 100%;
   height: 348px;
   display: flex;
@@ -389,51 +392,45 @@ footer{
   align-items: center;
   margin-bottom: 30px;
 }
-.foot-content{
+.foot-content {
   width: 100%;
   max-width: 1120px;
   height: 248px;
   display: flex;
   justify-content: space-between;
   /* border: 1px solid black; */
-
 }
-.foot-content .logo-dscp{
+.foot-content .logo-dscp {
   width: 100%;
   max-width: 300px;
-
 }
-.foot-content .logo-dscp p{
+.foot-content .logo-dscp p {
   padding-top: 16px;
 }
 .foot-content div .ul-1,
-.foot-content div .ul-2
-{
+.foot-content div .ul-2 {
   width: 100%;
   max-width: 120px;
   /* border: 1px solid black; */
   height: 240px;
 }
 .foot-content div .ul-1 li,
-.foot-content div .ul-2 li
-{
+.foot-content div .ul-2 li {
   list-style: none;
   padding-top: 30px;
 }
 .foot-content div .ul-1 .no-pad,
-.foot-content div .ul-2 .no-pad
-{
+.foot-content div .ul-2 .no-pad {
   padding-top: 0px;
 }
 
 .foot-content .ul-1 li a,
-.foot-content .ul-2 li a
-{
+.foot-content .ul-2 li a {
   text-decoration: none;
   font-size: 1rem;
   color: rgb(107, 114, 128);
 }
-.foot-content .social-media{
+.foot-content .social-media {
   width: 100%;
   max-width: 200px;
   height: 36px;
@@ -442,15 +439,11 @@ footer{
   gap: 17px;
 }
 
-
 /*-------Responsive Design-------*/
 
-
-
 @media screen and (max-width: 576px) {
- 
   /* only-small */
-  .only-small{
+  .only-small {
     width: 90%;
     margin: 10px auto;
     display: flex;
@@ -460,7 +453,6 @@ footer{
     font-weight: bold;
     padding: 10px 15px;
     font-size: 24px;
-  
   }
 
   /* Navbar start */
@@ -468,7 +460,7 @@ footer{
   nav {
     width: 100%;
     height: auto;
-    
+
     padding: 0 6px;
   }
   nav div ul li a.active,
@@ -484,7 +476,7 @@ footer{
     width: 100%;
     height: auto;
     flex-direction: column-reverse;
-    padding: 0 6px;
+    
   }
   .banner .banner-dscp {
     width: 95%;
@@ -534,7 +526,6 @@ footer{
 
   /* Grid-Container End */
 
-
   /* Challenge Part-1 Start */
 
   .ch-1 .photo {
@@ -571,7 +562,7 @@ footer{
   .ch-1-dscp-container ul {
     padding-left: 1.5rem;
   }
-   
+
   /* Challenge Part-1 End */
 
   /* Challenge Part-2 */
@@ -612,22 +603,21 @@ footer{
   }
 
   /* Challenge part-2 End */
-   
+
   /* Join Part start */
 
-  .join-part .join-dscp h1{
+  .join-part .join-dscp h1 {
     font-size: 1.25rem;
   }
   /* Join Part End */
 
-
   /* Footer Part start */
-  footer{
-     width: 100%;
-     margin-top: 250px;
-     margin-bottom: 20px;
+  footer {
+    width: 100%;
+    margin-top: 250px;
+    margin-bottom: 20px;
   }
-  .foot-content{
+  .foot-content {
     width: 92%;
     margin: 0 auto;
     height: auto;
@@ -636,6 +626,4 @@ footer{
     padding-bottom: 20px;
   }
   /* Footer Part End */
-
-
 }
