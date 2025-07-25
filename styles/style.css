@@ -258,22 +258,17 @@ nav div ul li .no {
     url("../assets/./deal-ana.png");
   border-radius: 10px;
   grid-column: 1;
-  grid-row: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.25rem;
-  border: none;
+  grid-row: 2;
 }
 .ch-2 .small-two {
   background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
     url("../assets/./deal-bloom.png");
-  border-radius: 10px;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
+}
+.ch-2 .small-two,
+.ch-2 .small-one {
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -283,6 +278,7 @@ nav div ul li .no {
   font-size: 1.25rem;
   border: none;
 }
+
 .ch-2 .big-one {
   background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
     url("../assets/./deal-zabo.png");
@@ -575,20 +571,20 @@ footer {
   }
   .ch-2 .small-one {
     width: 90%;
-    height: 220px;
-    grid-row: 1;
-    grid-column: auto;
-    margin: 0 auto;
-    font-size: 1.25rem;
-  }
-  .ch-2 .small-two {
-    width: 90%;
     height: auto;
     grid-row: 2;
     grid-column: auto;
     margin: 0 auto;
     font-size: 1.25rem;
     border-radius: 0;
+  }
+  .ch-2 .small-two {
+    width: 90%;
+    height: 220px;
+    grid-row: 1;
+    grid-column: auto;
+    margin: 0 auto;
+    font-size: 1.25rem;
   }
   .ch-2 .big-one {
     font-size: 1.25rem;
@@ -599,7 +595,10 @@ footer {
     margin: 0 auto;
   }
   .ch-2 .big-one .flower-dscp div {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 89px;
+    border-bottom: 2px solid white;
   }
 
   /* Challenge part-2 End */
